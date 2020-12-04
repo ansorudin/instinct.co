@@ -1,0 +1,24 @@
+.my-menu {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.my-menu:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px black;  
+    width: 60%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.my-menu:hover:after { transform: scaleX(1); }
+
+::placeholder {
+    font-size: 12px !important;
+}
+

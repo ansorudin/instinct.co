@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes,  faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes,  faShoppingCart, faSearchPlus, faSearch} from '@fortawesome/free-solid-svg-icons'
 import ModalLogin from '../component/ModalLogin';
 import {Link} from 'react-router-dom'
 import Axios from "axios";
 import apiUrl from "../support/constant/apiUrl";
 import BadgeCart from "../component/BadgeCart";
-
+import './../support/css/Navbar.css'
+import Logo from './../support/images/logoInstinct.png'
 
 export class Navbar extends Component{
     state ={
-        openToggle : true,
+        openToggle : false,
         isLogin : false,
         data : null,
         ava : '',
         badgeCart : null,
-        role : null
+        role : null,
+        searchIsOpen : false
     }
 
     componentDidMount(){
@@ -23,7 +25,6 @@ export class Navbar extends Component{
         
     }
     
-
     onLogout = () => {
         if(window.confirm('are you sure want to logout ??')){
             localStorage.removeItem('id')
@@ -68,30 +69,30 @@ export class Navbar extends Component{
         this.setState({openToggle : !this.state.openToggle})
     }
 
-
-
+    toggle = () => {
+        this.setState({dropdownOpen : !this.state.dropdownOpen})
+    }
     render(){
         return (
             <div>
+                
             {/* Secondary Navbar */}
             <div className="sporteens-bg-black py-3 sporteens-light">
-                <div className="container">
+                <div className="instinct-container">
                     <div className="row justify-content-end">
-                        <div className='mr-3 sporteens-navbar-top d-none d-md-block'>
+                        <div className=' sporteens-navbar-top d-none d-md-block'>
                             {
                                 this.state.isLogin ? 
                                     <div className='sporteens-navbar-top d-none d-md-block '>
-                                        <Link onClick={this.onLogout} to='/user-detail' className='sporteens-clickable-el my-link sporteens-font-16'>
+                                        <Link onClick={this.onLogout} to='/user-detail' className='sporteens-clickable-el my-link sporteens-font-16 mr-md-2'>
                                             {this.state.data ? 
-                                            <img src={`https://avatars.dicebear.com/api/human/${this.state.ava}.svg`} alt="kkk" style={{width:'22px', marginTop:'-3px', padding:'1px'}} className='border rounded-circle'/>
+                                            <img src={`https://avatars.dicebear.com/api/human/${this.state.ava}.svg`} alt="kkk" style={{width:'22px', marginTop:'-3px', padding:'1px'}} />
                                             : null}
                                         </Link>
-                                        <span className='mx-2 my-link sporteens-font-16'> / </span> 
-                                        <Link to='/carts' className='sporteens-clickable-el my-link my-link sporteens-font-16'> <FontAwesomeIcon icon={faShoppingCart} /> <BadgeCart/> </Link>
+                                        <span>Hey, Ansor</span>
                                     </div>
                                 :
                                 <div className="d-flex">
-                                    
                                     <ModalLogin isi='Login' className=' sporteens-clickable-el'/>
                                     <span className='mx-1'> / </span> 
                                     <Link to='/register' className='sporteens-clickable-el my-link'>Register</Link>
@@ -103,18 +104,23 @@ export class Navbar extends Component{
             </div>
 
             {/* Main Navbar */}
-            <div className="sporteens-bg-light py-4 navbar-sporteens">
-                <div className="container">
-                    <div className="row justify-content-between px-4 px-md-0">
+            <div className="sporteens-bg-light navbar-sporteens" style={{height : '80px'}}>
+                <div className="instinct-container h-100">
+                    <div className="row justify-content-between px-4 px-md-0 align-items-center h-100">
                         {/* Header Logo */}
                         <div className="sporteens-main-dark sporteens-logo-header sporteens-clickable-el">
-                            <Link to='/' className='my-link'>LOGO</Link> 
+                            <Link to='/' className='my-link'>
+                                <img 
+                                style={{height : 25}}
+                                src={Logo}
+                                />
+                            </Link> 
                         </div>
 
                         {/* Header Items */}
                         {
                             this.state.role === 'admin' ?
-                            <div className="sporteens-main-dark sporteens-items-header d-none d-md-block">
+                            <div className=" sporteens-items-header d-none d-md-block">
                                 <span className='mr-md-3 sporteens-clickable-el'>
                                     <Link to='/' className='my-link'>Home</Link>  
                                 </span>
@@ -129,18 +135,32 @@ export class Navbar extends Component{
                                 </span>
                             </div>
                             :
-                            <div className="sporteens-main-dark sporteens-items-header d-none d-md-block">
-                                <span className='mr-md-3 sporteens-clickable-el'>
+                            <div className="sporteens-items-header d-none d-md-block">
+                                <span className='mr-md-3 sporteens-clickable-el my-menu'>
                                     <Link to='/' className='my-link'>Home</Link>  
                                 </span>
-                                <span className='mr-md-3 sporteens-clickable-el' >
-                                    <Link to='/products' className='my-link'>Products</Link>
+
+                                <span className='mr-md-3 sporteens-clickable-el my-menu text-center' >
+                                    <Link to='/products' className='my-link' >Shop</Link>
                                 </span>
-                                <span className='mr-md-3 sporteens-clickable-el'>
+                                <span className='mr-md-3 sporteens-clickable-el my-menu'>
                                 <Link to='/brands' className='my-link'>Brands</Link>
                                 </span>
-                                <span className='mr-md-3 sporteens-clickable-el'>
-                                <Link to='/sale' className='my-link'>Sale</Link>
+                                <span className='mr-md-3 sporteens-clickable-el '>
+                                <Link to='/sale' className='my-link my-menu'>Sale</Link>
+                                </span>
+                                <span className='mr-md-3' style={{display : 'inline-block', marginBottom: '-6px', paddingBottom: '3px'}}>
+                                    <input 
+                                    type="text" 
+                                    className='form-control' 
+                                    placeholder='Enter anything...'
+                                    style={this.state.searchIsOpen ? {fontSize : '14px', width : '200px', height : '30px', transition : 'step-start'} : {marginRight : '20px', display : 'none', width : '200px', height : '20px'}}/>
+                                </span>
+                                <span >
+                                    <FontAwesomeIcon icon={faSearch} className='mr-3 sporteens-clickable-el' onClick={() => this.setState({searchIsOpen : !this.state.searchIsOpen})}/>
+                                </span>
+                                <span>
+                                    <Link to='/carts' className='sporteens-clickable-el my-link my-link sporteens-font-16'> <FontAwesomeIcon icon={faShoppingCart} /> <BadgeCart/></Link>
                                 </span>
                             </div>
 
@@ -162,7 +182,7 @@ export class Navbar extends Component{
                     </div>
                     {
                         this.state.openToggle ? 
-                        <div className="sporteens-main-dark sporteens-header-items-mobile px-4 d-md-none" onClick={this.onOpenToggle}>
+                        <div className="bg-white border sporteens-main-dark sporteens-header-items-mobile px-4 pb-4 d-md-none" onClick={this.onOpenToggle}>
                             <div className="mt-3 border-bottom sporteens-clickable-el">
                                <Link className='my-link sporteens-onhover' to='/'>Home</Link> 
                             </div>

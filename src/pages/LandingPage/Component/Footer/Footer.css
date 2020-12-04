@@ -1,0 +1,27 @@
+.footer-contact {
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-weight: 600;
+}
+.text-withLogo {
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+
+@media (max-width: 767.98px) { 
+    .subscribe {
+        display: none;
+    }
+    .item-term-us {
+        display: none;
+    }
+
+    .term-us {
+        display: none;
+    }
+
+    .contact-us {
+        display: none;
+    }
+    
+ }

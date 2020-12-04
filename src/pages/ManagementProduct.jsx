@@ -96,7 +96,12 @@ class ManagementProduct extends Component {
                         <p className='sporteens-font-14 mt-2 mb-2'>Link Image 2 : <span>{val.image2}</span> </p>
                         <p className='sporteens-font-14'>Link Image 3 : <span>{val.image3}</span> </p>
                         <input type="button" value="Edit This Product" className='btn btn-outline-danger mt-4' onClick={() => this.setState({selectId : val.id})}/>
-                        <input type="button" value="Move to Draft" className='btn btn-outline-danger mt-4' onClick={() => this.onMoveToDraft(val.id)}/>
+                        {
+                            val.isPublish ?
+                            <input type="button" value="Move to Draft" className='btn btn-outline-danger mt-4' onClick={() => this.onMoveToDraft(val.id)}/>
+                            :
+                            <input type="button" value='Move to Product List' className='btn btn-outline-danger mt-4' onClick={() => this.onBackToProductList(val.id)}/>
+                        }
                     </div>
                 </div>
             )
@@ -133,34 +138,25 @@ class ManagementProduct extends Component {
     }
 
     onMoveToDraft = (id) =>{
-
-        Axios.get(apiUrl + 'product?id=' + id)
+     
+        Axios.patch(apiUrl + 'product/' + id, {isPublish : false})
         .then((res) => {
-            var data = res.data[0]
-            // console.log(data)
-            Axios.post(apiUrl + 'draft', data)
-            .then((res) =>{
-                // console.log(res.data)
-                Axios.delete(apiUrl + 'product/' + id)
-                .then((res) => {
-                    // console.log(res)
-                    alert('Move to Draft Succes')
-                    window.location = '/draft-product'
-
-                })
-                .catch((err) => {
-                    console.log(err)
-                })
-            })
-            .catch((err) => {
-                console.log(err)
-            })
+            console.log(res.data)
         })
         .catch((err) => {
             console.log(err)
         })
         
-        
+    }
+
+    onBackToProductList = (id) => {
+        Axios.patch(apiUrl + 'product/' + id, {isPublish : true})
+        .then((res) => {
+            console.log(res.data)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
     }
 
     render() {

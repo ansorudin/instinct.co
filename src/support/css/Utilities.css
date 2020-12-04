@@ -96,15 +96,29 @@ p{
 /* Garis horizontal */
 
 .sporteens-text-ditengah-line{
-    width: 100%; 
-    text-align: center; 
+    width: 80%; 
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
-    margin: 10px 0 20px; 
+    
 }
-.sporteens-text-ditengah-text{
-    background:#fff; 
-    padding:0 20px; 
+
+.border-double {
+    border: 1px solid black;
+    position: relative;
+    padding: 12px;
+    /* background-color: salmon; */
+}
+
+.border-double::after {
+    content: " ";
+    position: absolute ;
+    z-index: -1;
+    border: 1px solid black;
+    top: -5px;
+    left: -5px;
+    right: 3px;
+    bottom: 3px;
+    padding: 5px;
 }
 
 /* Link */
@@ -124,4 +138,10 @@ p{
 
 .sporteens-onhover:hover{
     font-weight: bold;
+}
+
+/* container */
+
+.instinct-container {
+    margin: 0 60px;
 }

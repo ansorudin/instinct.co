@@ -13,6 +13,13 @@
       "password": "123",
       "role": "user",
       "id": 2
+    },
+    {
+      "email": "ahmadansorudin@gmail.com",
+      "phone": "",
+      "password": "123123123",
+      "role": "user",
+      "id": 3
     }
   ],
   "product": [
@@ -26,6 +33,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/191167240610_normal_0020.jpg?v=1597012560&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/191167240610_normal_0021.jpg?v=1597012560&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/191167240610_normal_0023.jpg?v=1597012560&auto=compress,format"
     },
     {
@@ -38,6 +46,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/700053288911_normal_01.jpg?v=1574230837&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/700053288911_normal_02.jpg?v=1574230837&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/700053288911_normal_04.jpg?v=1574230837&auto=compress,format"
     },
     {
@@ -50,6 +59,7 @@
       "Stock": 25,
       "image1": "https://culture-kings-us.imgix.net/products/700053630000_normal_01.jpg?v=1574230796&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/700053630000_normal_02.jpg?v=1574230796&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/700053630000_normal_04.jpg?v=1574230796&auto=compress,format"
     },
     {
@@ -62,6 +72,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/05003343-YB012_normal_001.jpg?v=1578006371&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/05003343-YB012_normal_002.jpg?v=1578006371&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/05003343-YB012_normal_004.jpg?v=1578006371&auto=compress,format"
     },
     {
@@ -74,6 +85,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/700053804678_normal_01.jpg?v=1574226952&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/700053804678_normal_02.jpg?v=1574226952&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/700053804678_normal_04.jpg?v=1574226952&auto=compress,format"
     },
     {
@@ -86,6 +98,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/888755676899_normal_0020.jpg?v=1597119127&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/888755676899_normal_0021.jpg?v=1597119127&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/888755676899_normal_0023.jpg?v=1597119127&auto=compress,format"
     },
     {
@@ -98,6 +111,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/888755658550_normal_0020.jpg?v=1596688161&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/888755658550_normal_0021.jpg?v=1596688161&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/888755658550_normal_0023.jpg?v=1596688161&auto=compress,format"
     },
     {
@@ -110,6 +124,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/888757074723_normal_0020.jpg?v=1590749172&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/888757074723_normal_0021.jpg?v=1590749172&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/888757074723_normal_0023.jpg?v=1590749173&auto=compress,format"
     },
     {
@@ -122,6 +137,7 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/01014906-YB001_normal_020.jpg?v=1571179943&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/01014906-YB001_normal_021.jpg?v=1571179943&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/01014906-YB001_normal_022.jpg?v=1571179943&auto=compress,format"
     },
     {
@@ -134,19 +150,87 @@
       "Stock": 10,
       "image1": "https://culture-kings-us.imgix.net/products/4061612072317_normal_0020.jpg?v=1598336291&auto=compress,format",
       "image2": "https://culture-kings-us.imgix.net/products/4061612072317_normal_0022.jpg?v=1598336291&auto=compress,format",
+      "isPublish": true,
       "image3": "https://culture-kings-us.imgix.net/products/4061612072317_normal_0021.jpg?v=1598336291&auto=compress,format"
     },
     {
-      "name": "a",
-      "brand": "a",
-      "price": "a",
-      "category": "a",
-      "Stock": "a",
-      "discount": "a",
-      "image1": "a",
-      "imag2": "a",
-      "image3": "a",
+      "id": 1,
+      "name": "Chuck Taylor All Star 70 High Top - Red and White",
+      "brand": "Converse",
+      "price": 820000,
+      "category": "Shoes",
+      "discount": 10,
+      "Stock": 10,
+      "image1": "https://culture-kings-us.imgix.net/products/888757074723_normal_0020.jpg?v=1590749172&auto=compress,format",
+      "image2": "https://culture-kings-us.imgix.net/products/888757074723_normal_0021.jpg?v=1590749172&auto=compress,format",
+      "isPublish": true,
+      "image3": "https://culture-kings-us.imgix.net/products/888757074723_normal_0023.jpg?v=1590749173&auto=compress,format"
+    },
+    {
+      "id": 2,
+      "name": "Air Force 1 '07",
+      "category": "Shoes",
+      "brand": "Nike",
+      "price": 9500000000,
+      "discount": 0,
+      "Stock": 2,
+      "image1": "https://culture-kings-us.imgix.net/products/05000949-YW240_normal_0021.jpg?v=1583468912&auto=compress,format",
+      "image2": "https://culture-kings-us.imgix.net/products/05000949-YW240_normal_0022.jpg?v=1583468912&auto=compress,format",
+      "isPublish": true,
+      "image3": "https://culture-kings-us.imgix.net/products/05000949-YW240_normal_0024.jpg?v=1583468912&auto=compress,format"
+    },
+    {
+      "id": 13,
+      "name": "ASSC X Panda Express Hoodie",
+      "brand": "ASSC",
+      "category": "Top",
+      "price": 650000,
+      "discount": 30,
+      "Stock": 10,
+      "image1": "https://culture-kings-us.imgix.net/products/4454569386949_normal_00020.jpg?v=1597974574&auto=compress,format",
+      "image2": "https://culture-kings-us.imgix.net/products/4454569386949_normal_00030.jpg?v=1597974574&auto=compress,format",
+      "isPublish": true,
+      "image3": "https://culture-kings-us.imgix.net/products/4454569386949_normal_00060.jpg?v=1597974574&auto=compress,format"
+    },
+    {
+      "name": "compas",
+      "prie": "200000",
+      "images_1": "images_1",
+      "images_2": "images_2",
+      "images_3": "images_3",
+      "category_id": "1",
+      "stock": "10",
       "id": 14
+    },
+    {
+      "name": "nike",
+      "prie": "121212",
+      "images_1": "images_1",
+      "images_2": "images_2",
+      "images_3": "images_3",
+      "category_id": "1",
+      "stock": "10",
+      "id": 15
+    },
+    {
+      "name": "puma",
+      "prie": "300000",
+      "images_1": "images_1",
+      "images_2": "images_2",
+      "images_3": "images_3",
+      "category_id": "1",
+      "stock": "10",
+      "id": 16
+    },
+    {
+      "name": "puma",
+      "prie": "300000",
+      "images_1": "images_1",
+      "images_2": "images_2",
+      "images_3": "images_3",
+      "category_id": "1",
+      "stock": "10",
+      "id": 17
     }
   ],
   "carts": [],
@@ -339,44 +423,72 @@
         }
       ],
       "id": 12
+    },
+    {
+      "createdAt": "2020-10-20T14:36:34.825Z",
+      "totalPrice": 0,
+      "status": "unpaid",
+      "id_user": 2,
+      "detail": [],
+      "id": 13
+    },
+    {
+      "createdAt": "2020-10-21T16:34:09.481Z",
+      "totalPrice": 700000,
+      "status": "unpaid",
+      "id_user": 2,
+      "detail": [
+        {
+          "product_name": "Authentic - All Black",
+          "product_price": 700000,
+          "product_image": "https://culture-kings-us.imgix.net/products/700053288911_normal_01.jpg?v=1574230837&auto=compress,format",
+          "qty": 1
+        }
+      ],
+      "id": 14
+    },
+    {
+      "createdAt": "2020-12-04T06:35:17.273Z",
+      "totalPrice": 2650000,
+      "status": "unpaid",
+      "id_user": 3,
+      "detail": [
+        {
+          "product_name": "SK8-HI - Black and White",
+          "product_price": 850000,
+          "product_image": "https://culture-kings-us.imgix.net/products/700053630000_normal_01.jpg?v=1574230796&auto=compress,format",
+          "qty": 1
+        },
+        {
+          "product_name": "Los Angeles Dodgers Drip Logo 9FORTY A-Frame Snapback",
+          "product_price": 450000,
+          "product_image": "https://culture-kings-us.imgix.net/products/01014906-YB001_normal_020.jpg?v=1571179943&auto=compress,format",
+          "qty": 4
+        }
+      ],
+      "id": 15
+    },
+    {
+      "createdAt": "2020-12-04T06:55:51.204Z",
+      "totalPrice": 0,
+      "status": "unpaid",
+      "id_user": 3,
+      "detail": [],
+      "id": 16
     }
   ],
   "draft": [
     {
-      "id": 1,
-      "name": "Chuck Taylor All Star 70 High Top - Red and White",
-      "brand": "Converse",
-      "price": 820000,
-      "category": "Shoes",
-      "discount": 10,
-      "Stock": 10,
-      "image1": "https://culture-kings-us.imgix.net/products/888757074723_normal_0020.jpg?v=1590749172&auto=compress,format",
-      "image2": "https://culture-kings-us.imgix.net/products/888757074723_normal_0021.jpg?v=1590749172&auto=compress,format",
-      "image3": "https://culture-kings-us.imgix.net/products/888757074723_normal_0023.jpg?v=1590749173&auto=compress,format"
-    },
-    {
-      "id": 2,
-      "name": "Air Force 1 '07",
-      "category": "Shoes",
-      "brand": "Nike",
-      "price": 9500000000,
-      "discount": 0,
-      "Stock": 2,
-      "image1": "https://culture-kings-us.imgix.net/products/05000949-YW240_normal_0021.jpg?v=1583468912&auto=compress,format",
-      "image2": "https://culture-kings-us.imgix.net/products/05000949-YW240_normal_0022.jpg?v=1583468912&auto=compress,format",
-      "image3": "https://culture-kings-us.imgix.net/products/05000949-YW240_normal_0024.jpg?v=1583468912&auto=compress,format"
-    },
-    {
-      "id": 13,
-      "name": "ASSC X Panda Express Hoodie",
-      "brand": "ASSC",
-      "category": "Top",
-      "price": 650000,
-      "discount": 30,
-      "Stock": 10,
-      "image1": "https://culture-kings-us.imgix.net/products/4454569386949_normal_00020.jpg?v=1597974574&auto=compress,format",
-      "image2": "https://culture-kings-us.imgix.net/products/4454569386949_normal_00030.jpg?v=1597974574&auto=compress,format",
-      "image3": "https://culture-kings-us.imgix.net/products/4454569386949_normal_00060.jpg?v=1597974574&auto=compress,format"
+      "name": "a",
+      "brand": "a",
+      "price": "a",
+      "category": "a",
+      "Stock": "a",
+      "discount": "a",
+      "image1": "a",
+      "imag2": "a",
+      "image3": "a",
+      "id": 14
     }
   ]
 }

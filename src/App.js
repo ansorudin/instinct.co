@@ -7,7 +7,7 @@ import './support/css/registrasi.css'
 import './support/css/detailProduct.css'
 import './support/css/Cart.css'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
-import LandingPage from './pages/LandingPage.jsx'
+import LandingPage from './pages/LandingPage/LandingPage'
 import ListProduct from './pages/ListProduct.jsx'
 import Brands from './pages/Brands.jsx'
 import Cart from './pages/Cart.jsx'
@@ -23,6 +23,10 @@ import Admin from './pages/Admin.jsx'
 import Axios from 'axios'
 import apiUrl from './support/constant/apiUrl.js'
 import PageNotFound from './pages/PageNotFound.jsx'
+import testApiReal from './pages/testApiReal.jsx'
+import testDetail from './pages/testDetail.jsx'
+import Exam from './pages/Exam.jsx'
+import Footer from './pages/LandingPage/Component/Footer/Footer.jsx'
 
 
 
@@ -60,9 +64,11 @@ class App extends React.Component{
     }
     return(
       <BrowserRouter>
+
+        <Exam />
         <div>
           <Navbar/> 
-
+          
           <Switch>
             <Route exact path='/' component={LandingPage} />
             <Route path='/products' component={ListProduct} />
@@ -79,8 +85,12 @@ class App extends React.Component{
             {this.state.role === 'admin' ? <Route path='/admin' component={Admin} /> : null}
 
             <Route path='/draft-product' component={DraftProduct} />
+
+            <Route path='/test-app/detail/:id' component={testDetail} />
+            <Route path='/test-app' component={testApiReal} />
             <Route path='*' component={PageNotFound} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     )

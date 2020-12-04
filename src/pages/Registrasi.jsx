@@ -67,10 +67,10 @@ class Registrasi extends Component {
                 .then((res) =>{
                     console.log(res)
                     alert('register succes')
-                    // window.location = '/create-password/' + res.data.id
+                    window.location = '/'
                     // simpan data user (id) ke local storage (val, datanya)
                     localStorage.setItem('id', res.data.id)
-                    // localStorage.setItem('role', res.data.role)
+                    localStorage.setItem('role', res.data.role)
                 })
                 .catch((err) =>{
                     this.setState({errorMessage : err.message })

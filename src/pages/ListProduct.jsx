@@ -52,6 +52,7 @@ class ListProduct extends Component {
 
     mapDataProduct = () => {
         return this.state.filteredData.map((val) => {
+            if(val.isPublish){
             return(
                     <div className="col-6 col-md-3 mt-4 mb-3 sporteens-clickable-el" key={val.id}>
                         <div className="h-100">
@@ -87,6 +88,7 @@ class ListProduct extends Component {
                         </div>
                     </div>
             )
+        }
         })
     }
 
@@ -222,7 +224,7 @@ class ListProduct extends Component {
                                     {this.state.isi}
                                     <FontAwesomeIcon icon={faChevronDown} className='ml-2'/>
                                     </DropdownToggle>
-                                    <DropdownMenu  >
+                                    <DropdownMenu className='dropDownMenu' >
                                         <div className='sporteens-clickable-el px-3 sporteens-font-14'>
                                             <option onClick={this.onChangeSort} className='sporteens-onhover'>New Product</option>
                                             <option onClick={this.onChangeSort} className='sporteens-onhover'>Price Low-High</option>

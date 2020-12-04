@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 class Brands extends Component {
-    state ={
+    state = {
         aku : null
     }
     render() {

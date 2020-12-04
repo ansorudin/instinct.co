@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import apiUrl from '../support/constant/apiUrl';
-import Skeleton from 'react-loading-skeleton';
 
 class Admin extends Component {
 

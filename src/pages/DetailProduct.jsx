@@ -142,7 +142,7 @@ class DetailProduct extends Component {
     render() {
         if(this.state.data !== null){
             return (  
-                <div className='py-5'>
+                <div className='py-5' style={{marginBottom : 500}}>
                     <div className="container sporteens-container-detail-product mb-5">
                         <div className="row h-75 mt-5">
                             <div className="col-md-6 sporteens-detail-product-image ">
@@ -182,7 +182,7 @@ class DetailProduct extends Component {
                                     <div className="col-12 deskripsi-nama  d-flex flex-column justify-content-center border-bottom">
                                         <div className='mb-3'>
                                             <h4>{this.state.data.name}</h4>
-                                            <h6>Terjual 20 Pcs</h6>
+                                            <p>Terjual 20 Pcs</p>
                                         </div>
                                         {
                                         this.state.data.discount > 0? 
