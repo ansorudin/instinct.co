@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/instinct.co/static/css/main.385f3911.chunk.css",
+    "main.js": "/instinct.co/static/js/main.da75b6a2.chunk.js",
+    "main.js.map": "/instinct.co/static/js/main.da75b6a2.chunk.js.map",
+    "runtime-main.js": "/instinct.co/static/js/runtime-main.051df703.js",
+    "runtime-main.js.map": "/instinct.co/static/js/runtime-main.051df703.js.map",
+    "static/js/2.2549d72a.chunk.js": "/instinct.co/static/js/2.2549d72a.chunk.js",
+    "static/js/2.2549d72a.chunk.js.map": "/instinct.co/static/js/2.2549d72a.chunk.js.map",
+    "index.html": "/instinct.co/index.html",
+    "precache-manifest.df5f64dc5bc50e8ca5810733f6d75d49.js": "/instinct.co/precache-manifest.df5f64dc5bc50e8ca5810733f6d75d49.js",
+    "service-worker.js": "/instinct.co/service-worker.js",
+    "static/css/main.385f3911.chunk.css.map": "/instinct.co/static/css/main.385f3911.chunk.css.map",
+    "static/js/2.2549d72a.chunk.js.LICENSE.txt": "/instinct.co/static/js/2.2549d72a.chunk.js.LICENSE.txt",
+    "static/media/adidas-logo.png": "/instinct.co/static/media/adidas-logo.34ad1517.png",
+    "static/media/converse-logo.png": "/instinct.co/static/media/converse-logo.b97fdecc.png",
+    "static/media/gambar-lp-1.jpg": "/instinct.co/static/media/gambar-lp-1.575ac90d.jpg",
+    "static/media/gambar1.jpg": "/instinct.co/static/media/gambar1.89848225.jpg",
+    "static/media/gambar2.jpeg": "/instinct.co/static/media/gambar2.8d019833.jpeg",
+    "static/media/nike-logo.png": "/instinct.co/static/media/nike-logo.5aec495c.png",
+    "static/media/puma-logo.png": "/instinct.co/static/media/puma-logo.a78de7a7.png",
+    "static/media/stussy-logo.png": "/instinct.co/static/media/stussy-logo.31e79be9.png",
+    "static/media/vans-logo.png": "/instinct.co/static/media/vans-logo.19b084f4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.051df703.js",
+    "static/js/2.2549d72a.chunk.js",
+    "static/css/main.385f3911.chunk.css",
+    "static/js/main.da75b6a2.chunk.js"
+  ]
+}
