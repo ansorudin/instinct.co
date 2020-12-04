@@ -265,26 +265,34 @@ class Cart extends Component {
 
 
                         {/* Checkout Section */}
-                        
-                        <div className="col-md-4 mt-5 d-flex flex-column">
-                            <div className='border-bottom text-center'>
-                                <p className='p-0 m-0 py-2 sporteens-font-14 font-weight-bold'>Order Summary</p>
-                            </div>
-                            <div className=" mt-3 mb-2 row sporteens-font-14">
-                                <span className=' col-6'>Order Sub Total :</span>
-                                <span className='col-6 text-right'>Rp. {(this.state.summarOrder).toLocaleString('id-ID')}</span>
-                            </div>
-                            <div className=" mb-3 row sporteens-font-14">
-                                <span className=' col-6'>Promotion :</span>
-                                <span className='col-6 text-right'>(Rp. {(this.state.potongan.toLocaleString('id-ID'))})</span>
-                            </div>
-                            <div className="border-top py-3 d-flex justify-content-between">
-                                <span className=' font-weight-bold'>Order Total :</span>
-                                <span>Rp. {(this.state.summarOrder - this.state.potongan).toLocaleString('id-ID')} </span>
-                            </div>
-                            <input onClick={this.onBtnCheckout} type="button" value="Checkout" className='btn tombol-dark mt-4 mb-5'/>
 
-                        </div>
+                        {
+                            this.state.dataProduct === null || this.state.dataCart === null ?
+                            null
+                            :
+                            <div className="col-md-4 mt-5 d-flex flex-column">
+                                <div className='border-bottom text-center'>
+                                    <p className='p-0 m-0 py-2 sporteens-font-14 font-weight-bold'>Order Summary</p>
+                                </div>
+                                <div className=" mt-3 mb-2 row sporteens-font-14">
+                                    <span className=' col-6'>Order Sub Total :</span>
+                                    <span className='col-6 text-right'>Rp. {(this.state.summarOrder).toLocaleString('id-ID')}</span>
+                                </div>
+                                <div className=" mb-3 row sporteens-font-14">
+                                    <span className=' col-6'>Promotion :</span>
+                                    <span className='col-6 text-right'>(Rp. {(this.state.potongan.toLocaleString('id-ID'))})</span>
+                                </div>
+                                <div className="border-top py-3 d-flex justify-content-between">
+                                    <span className=' font-weight-bold'>Order Total :</span>
+                                    <span>Rp. {(this.state.summarOrder - this.state.potongan).toLocaleString('id-ID')} </span>
+                                </div>
+                                <input onClick={this.onBtnCheckout} type="button" value="Checkout" className='btn tombol-dark mt-4 mb-5'/>
+
+                            </div>
+
+                        }
+                        
+                        
                         <div>
                             
                         </div>
