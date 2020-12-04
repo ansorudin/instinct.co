@@ -475,6 +475,14 @@
       "id_user": 3,
       "detail": [],
       "id": 16
+    },
+    {
+      "createdAt": "2020-12-04T14:26:41.312Z",
+      "totalPrice": 0,
+      "status": "unpaid",
+      "id_user": 3,
+      "detail": [],
+      "id": 17
     }
   ],
   "draft": [
