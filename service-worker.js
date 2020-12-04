@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/instinct.co/precache-manifest.e83b858821f6f798e0d5891505dce1bd.js"
+  "/instinct.co/precache-manifest.510b9e3921a4d7facbc7af4dbebc74c3.js"
 );
 
 self.addEventListener('message', (event) => {

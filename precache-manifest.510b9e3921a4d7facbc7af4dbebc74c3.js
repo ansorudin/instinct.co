@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a44d490e952aa78674e3ce2e19c3f75",
+    "revision": "f917e5984c5e84f5276a95ccde9fefb0",
     "url": "/instinct.co/index.html"
   },
   {
-    "revision": "cce6f1358bd71d058b5f",
+    "revision": "a2e12d2f81b9c0929416",
     "url": "/instinct.co/static/css/main.385f3911.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/instinct.co/static/js/2.2549d72a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cce6f1358bd71d058b5f",
-    "url": "/instinct.co/static/js/main.88ce79e9.chunk.js"
+    "revision": "a2e12d2f81b9c0929416",
+    "url": "/instinct.co/static/js/main.7683858e.chunk.js"
   },
   {
     "revision": "63abf9386971cd676ee4",
