@@ -70,7 +70,7 @@ class App extends React.Component{
           <Navbar/> 
           
           <Switch>
-            <Route exact path='/instinct.co' component={LandingPage} />
+            <Route exact path='/' component={LandingPage} />
             <Route path='/products' component={ListProduct} />
             <Route path='/brands' component={Brands} />
             <Route path='/carts' component={Cart} />
